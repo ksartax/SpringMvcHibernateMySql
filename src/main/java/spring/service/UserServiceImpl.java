@@ -1,6 +1,9 @@
 package spring.service;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.annotation.ComponentScan;
+import org.springframework.context.annotation.Configuration;
+import org.springframework.stereotype.Service;
 import spring.dao.UserDao;
 import spring.model.User;
 
@@ -10,6 +13,7 @@ import java.util.List;
 /**
  * Created by Damian Stępniak on 09.03.2017.
  */
+@Service("userService")
 public class UserServiceImpl implements UserService{
 
     @Autowired

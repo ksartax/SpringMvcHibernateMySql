@@ -71,7 +71,7 @@
         <dependency>
             <groupId>mysql</groupId>
             <artifactId>mysql-connector-java</artifactId>
-            <version>RELEASE</version>
+            <version>${mysql.connector.version}</version>
         </dependency>
 
         <!-- Joda-Time -->

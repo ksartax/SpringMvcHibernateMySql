@@ -12,6 +12,7 @@ import java.util.List;
  * Created by Damian Stępniak on 09.03.2017.
  */
 
+@Repository("userDao")
 public class UserDaoImpl extends AbstractDao<Integer, User> implements UserDao{
 
     @SuppressWarnings("unchecked")

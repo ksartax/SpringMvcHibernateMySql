@@ -25,34 +25,34 @@
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-core</artifactId>
-            <version>5.0.0.BUILD-SNAPSHOT</version>
+            <version>${springframework.version}</version>
         </dependency>
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-web</artifactId>
-            <version>4.3.7.RELEASE</version>
+            <version>${springframework.version}</version>
         </dependency>
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-webmvc</artifactId>
-            <version>4.3.7.RELEASE</version>
+            <version>${springframework.version}</version>
         </dependency>
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-tx</artifactId>
-            <version>RELEASE</version>
+            <version>${springframework.version}</version>
         </dependency>
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-orm</artifactId>
-            <version>RELEASE</version>
+            <version>${springframework.version}</version>
         </dependency>
 
         <!-- Hibernate -->
         <dependency>
             <groupId>org.hibernate</groupId>
             <artifactId>hibernate-core</artifactId>
-            <version>RELEASE</version>
+            <version>${hibernate.version}</version>
         </dependency>
 
         <!-- jsr303 validation -->
@@ -78,7 +78,7 @@
         <dependency>
             <groupId>joda-time</groupId>
             <artifactId>joda-time</artifactId>
-            <version>RELEASE</version>
+            <version>${joda-time.version}</version>
         </dependency>
 
         <!-- To map JodaTime with database type -->
@@ -164,6 +164,5 @@
                 </plugin>
             </plugins>
         </pluginManagement>
-        <finalName>SpringMvcHibernateMySql</finalName>
     </build>
 </project>

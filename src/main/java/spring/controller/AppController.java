@@ -3,6 +3,7 @@ package spring.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import spring.service.UserService;
@@ -19,7 +20,8 @@ public class AppController {
     private UserService userService;
 
     @RequestMapping(method = RequestMethod.GET)
-    public String index(){
+    public String index(ModelMap modelMap){
+        modelMap.addAttribute("user", userService.findAllUsers());
         return "index";
     }
 

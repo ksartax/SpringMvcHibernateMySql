@@ -1,3 +1,4 @@
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%--
   Created by IntelliJ IDEA.
   User: Damian Stępniak
@@ -11,6 +12,13 @@
     <title>Title</title>
 </head>
 <body>
-ddsa
+
+    <c:forEach items="${user}" var="us">
+        <li>
+            ${us.id}
+            ${us.imie}
+        </li>
+    </c:forEach>
+
 </body>
 </html>
